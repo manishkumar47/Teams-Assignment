@@ -7,20 +7,20 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--background);
+  overflow-y:hidden;
 }
 
 :root {
   --primary: #6366f1;
   --primary-light: #eef2ff;
 
-  --background: #f8fafc;
+  --background: #cecff821;
   --card-bg: #ffffff;
 
   --heading: #111827;
   --text: #6b7280;
 
-  --border: #e5e7eb;
+  --border: #e5e7eb9f;
 
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.14);
@@ -30,12 +30,21 @@ body {
 
 .header {
   height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+.header-content{
   width: calc(100% - 80px);
   display: flex;
   gap: 20px;
   align-items: center;
-}
 
+}
 .header img {
   height: 50px;
 }
@@ -123,9 +132,9 @@ padding-right: 10px;
   border-radius: 10px;
 
   padding: 28px 24px;
-
+/* 
   box-shadow:
-    0 8px 24px rgba(15, 23, 42, .08);
+    0 8px 24px rgba(15, 23, 42, .08); */
 
   transition:
     transform .35s ease,
@@ -165,9 +174,9 @@ padding-right: 10px;
   align-items: center;
   text-align: center;
 
-  width: 85%;
+  width: 88%;
 
-  gap: 8px;
+  gap: 4px;
 }
 
 .team-member-content h2,
@@ -185,6 +194,7 @@ padding-right: 10px;
   font-size: 17px;
   font-weight: 600;
   color: var(--primary);
+  margin-bottom: 4px;
 }
 
 .team-member-content p {
