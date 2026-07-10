@@ -123,8 +123,9 @@ padding-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
+  
   background: var(--card-bg);
 
   border: 1px solid var(--border);
@@ -173,8 +174,9 @@ padding-right: 10px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
+  
   width: 88%;
+  flex: 1;
 
   gap: 4px;
 }
@@ -207,7 +209,8 @@ padding-right: 10px;
 .social-icons {
   display: flex;
   gap: 14px;
-  margin-top: 18px;
+
+  margin-top: auto;
 }
 
 .social-icons a {
