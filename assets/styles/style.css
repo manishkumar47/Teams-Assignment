@@ -132,9 +132,9 @@ padding-right: 10px;
   border-radius: 10px;
 
   padding: 28px 24px;
-/* 
+
   box-shadow:
-    0 8px 24px rgba(15, 23, 42, .08); */
+    0 2px 4px rgba(15, 23, 42, .08);
 
   transition:
     transform .35s ease,
